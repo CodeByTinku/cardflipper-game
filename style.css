@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #d43215, #2377ff);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: cursive;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card {
+  width: 60px;
+  height: 60px;
+  background-color: lightblue;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #0002;
+  user-select: none;
+  transition: background 0.2s, color 0.2s;
+}
+.card.matched {
+  background-color: lightgreen;
+  color: #222;
+  pointer-events: none;
+}
